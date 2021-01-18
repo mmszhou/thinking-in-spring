@@ -1,7 +1,6 @@
 package com.mms.thinking.in.spring.ioc.overview.dependency.lookup;
 
 import com.mms.thinking.in.spring.ioc.overview.annotaion.Super;
-import com.mms.thinking.in.spring.ioc.overview.domain.SuperUser;
 import com.mms.thinking.in.spring.ioc.overview.domain.User;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.ListableBeanFactory;

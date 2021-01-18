@@ -9,10 +9,12 @@
         <property name="age" value="18"/>
     </bean>
 
+    <!--primary="true" 按类型查找，不加这个唯一的话，会报错，因为SuperUser继承了User，存在两个User-->
     <bean id="superUser"  class="com.mms.thinking.in.spring.ioc.overview.domain.SuperUser" parent="user"  primary="true">
         <property name="addr" value="这个杀手不太冷"/>
     </bean>
 
+    <!--延迟查找的中介，先拿到objectFactory，真正需要User的时候，才去查找-->
     <bean id="objectFactory" class="org.springframework.beans.factory.config.ObjectFactoryCreatingFactoryBean">
         <property name="targetBeanName" value="user"/>
     </bean>
